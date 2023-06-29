@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Project</title>
+</head>
+
+<body>
+
+    <nav>
+        <h1>Invoice Generator</h1>
+    </nav>
+
+    <!-- <img src="https://cdn.cp.adobe.io/content/2/rendition/b4bdccec-fdf5-43fe-9495-309e60976899/artwork/856aa349-f11c-45ef-8352-83338dbf33d5/version/0/format/jpg/dimension/width/size/400" id="logo"> -->
+    <!-- <h1>Payroll </h1>
+
+    <h4>Sam</h4>
+    <input id="pay_sam" class="pay" placeholder="Pay" >
+
+    <h4>Buddy</h4>
+    <input id="pay_buddy" class="pay" placeholder="Pay">
+
+    <h4>Luna</h4>
+    <input id="pay_luna" class="pay" placeholder="Pay">
+
+    <button id="btn">Enter</button> -->
+
+    <section class="form_container">
+        <div class="form">
+            <div class="invoice_details">
+
+                <div class="invoice_details_left">
+                    <input id="invoice_sender" class="invoice_input" type="text" placeholder="Who is the invoice from?" value="Invoice Sender">
+                    <div style="margin: 0; text-align: start; padding-left: 5px;">Bill to:</div>
+                    <input id="invoice_receiver" class="invoice_input" type="text" placeholder="Who is the invoice to?" value="Invoice Receiver">
+                </div>
+
+                <div class="invoice_details_right">
+                    <h1 style="margin-top: 0; margin-bottom: 20px; font-size: 4em;">INVOICE</h1>
+                    <input id="invoice_no" class="invoice_input" type="text" placeholder="Invoice No." value="#Invoice No.">
+                    <input id="invoice_date" class="invoice_input" type="date">
+                </div>
+            
+            </div>
+
+                <ul class="invoice_values_titles">
+                    <!-- <li>Description</li> -->
+                    <input type="text" id="invoice_value_title_description" value="Description">
+                    <input type="text" id="invoice_value_title_quantity" value="Quantity">
+                    <input type="text" id="invoice_value_title_rate" value="Rate">
+                    <input type="text" id="invoice_value_title_total" value="Total" readonly>
+                    <!-- <li>Quantity</li>
+                    <li>Rate</li>
+                    <li>Total</li> -->
+                </ul>
+
+                <div class="invoice_values">
+                    <textarea style="resize: none; font-size: 1em;" id="invoice_description" class="invoice_input" value="Invoice description"></textarea>
+                    <input id="invoice_quantity" class="invoice_input" type="number" placeholder="Quantity">
+                    <input id="invoice_rate" class="invoice_input" type="number" placeholder="Rate">
+                    <input id="invoice_total" class="total" value="£0.00" readonly>
+                </div>
+
+            <button id="invoice_btn">Create Invoice</button>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
